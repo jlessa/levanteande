@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade — Levante Ande</title>
+  <meta name="description" content="Política de privacidade do aplicativo Levante Ande / IA Short Lab.">
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.55; }
+    h1 { margin-bottom: .25rem; }
+    .lead { color: #666; margin-top: 0; }
+    h2 { margin-top: 2rem; }
+    code { background: rgba(127,127,127,.15); padding: .1rem .35rem; border-radius: 4px; }
+    ul { padding-left: 1.25rem; }
+    nav { margin-bottom: 1.5rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.3); color: #888; font-size: .9rem; }
+    a { color: #0a66c2; }
+  </style>
+</head>
+<body>
+  <nav><a href="index.html">← Início</a></nav>
+
+  <header>
+    <h1>Política de Privacidade</h1>
+    <p class="lead">Aplicação: <strong>Levante Ande</strong> (também denominada <em>IA Short Lab</em>).</p>
+    <p><strong>Última atualização:</strong> 21/05/2026.</p>
+  </header>
+
+  <main>
+    <h2>1. Identificação do controlador</h2>
+    <p>
+      Operador responsável e único usuário da aplicação:
+      <a href="mailto:jefferson2459@gmail.com">jefferson2459@gmail.com</a>.
+      Não há entidade jurídica, equipe ou prestador terceirizado envolvido no tratamento dos dados.
+    </p>
+
+    <h2>2. Natureza da aplicação</h2>
+    <p>
+      O Levante Ande é um aplicativo de uso pessoal, executado em infraestrutura do próprio operador.
+      Sua única finalidade é enviar vídeos curtos (Shorts) ao canal do YouTube autorizado pelo próprio
+      operador, a partir de cortes produzidos e aprovados localmente. Não há base de usuários, não há
+      conta pública, não há área de assinantes nem qualquer função compartilhada com terceiros.
+    </p>
+
+    <h2>3. Escopos OAuth utilizados e finalidade</h2>
+    <ul>
+      <li>
+        <code>https://www.googleapis.com/auth/youtube.upload</code> — utilizado exclusivamente para
+        upload de vídeos ao canal autenticado, via método oficial <code>videos.insert</code> da
+        YouTube Data API v3. Não é utilizado para leitura de dados de terceiros, comentários,
+        analytics ou qualquer outra operação além do envio de vídeos do próprio operador.
+      </li>
+    </ul>
+
+    <h2>4. Informações recebidas do Google</h2>
+    <ul>
+      <li><strong>Tokens OAuth 2.0</strong> (access token e refresh token) emitidos pelo Google após
+          consentimento explícito do operador.</li>
+      <li><strong>Identificador interno da conta Google</strong> autorizada, retornado pelo fluxo OAuth,
+          usado apenas para distinguir a sessão válida.</li>
+    </ul>
+    <p>
+      Nenhum dado pessoal de terceiros é recebido. Nenhum dado do Google é cruzado com qualquer
+      outra base. Nenhum dado do Google é utilizado para perfilamento, treinamento de modelos de IA,
+      publicidade ou qualquer finalidade não declarada nesta política.
+    </p>
+
+    <h2>5. Armazenamento</h2>
+    <p>
+      Os tokens OAuth são armazenados localmente no servidor controlado pelo operador, em volume
+      restrito de filesystem, fora de qualquer repositório versionado ou serviço de terceiros.
+      O acesso é limitado ao próprio operador.
+    </p>
+
+    <h2>6. Compartilhamento com terceiros</h2>
+    <p>
+      <strong>Nenhuma informação obtida das APIs do Google é compartilhada, vendida, alugada ou
+      transferida a terceiros</strong>, sob nenhuma hipótese. Não há provedores externos, parceiros
+      analíticos, redes de anúncios, processadores de pagamento ou integrações com plataformas de
+      mercado envolvidos no tratamento desses dados.
+    </p>
+
+    <h2>7. Uso limitado (Limited Use)</h2>
+    <p>
+      O uso das informações recebidas das APIs do Google pelo Levante Ande adere integralmente à
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">
+        Google API Services User Data Policy</a>, incluindo os requisitos de <em>Limited Use</em>.
+      Especificamente:
+    </p>
+    <ul>
+      <li>Os dados são utilizados apenas para a funcionalidade declarada (upload de Shorts ao próprio
+          canal autorizado).</li>
+      <li>Os dados não são transferidos a terceiros, exceto quando estritamente necessário para
+          prover a funcionalidade declarada, em conformidade com Termos de Serviço aplicáveis, ou
+          por exigência legal.</li>
+      <li>Os dados não são utilizados para servir anúncios, incluindo anúncios remarketing,
+          personalizados ou baseados em interesses.</li>
+      <li>Humanos não leem os dados, exceto: (a) com consentimento afirmativo do próprio operador,
+          (b) para fins de segurança (incluindo investigação de abuso), (c) para cumprir
+          obrigações legais aplicáveis ou (d) para operações em que os dados foram agregados e
+          anonimizados, e são usados apenas para fins internos.</li>
+    </ul>
+
+    <h2>8. Retenção e exclusão</h2>
+    <p>
+      Os tokens OAuth são mantidos enquanto o operador desejar continuar usando a aplicação. Podem
+      ser revogados a qualquer momento pelo próprio operador em
+      <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">
+        myaccount.google.com/permissions</a>. A revogação invalida imediatamente o acesso da
+      aplicação e os tokens locais deixam de funcionar.
+    </p>
+
+    <h2>9. Segurança</h2>
+    <p>
+      Os tokens são armazenados em filesystem com acesso restrito, fora de repositório público,
+      fora de logs e fora de qualquer canal de transmissão externo. O tráfego com as APIs do
+      Google é sempre via HTTPS. Não há painel administrativo exposto à internet pública.
+    </p>
+
+    <h2>10. Crianças</h2>
+    <p>
+      A aplicação não se destina a menores de idade e não coleta intencionalmente dados de crianças.
+      Como não há usuários externos, esse risco não se materializa.
+    </p>
+
+    <h2>11. Alterações desta política</h2>
+    <p>
+      Eventuais alterações serão publicadas nesta página com nova data em <em>Última atualização</em>
+      no topo. Alterações materiais (novo escopo, novo fluxo de tratamento) serão refletidas também
+      na configuração OAuth do projeto <code>levanteande</code>.
+    </p>
+
+    <h2>12. Contato</h2>
+    <p>
+      Dúvidas, solicitações de exclusão e exercício de direitos:
+      <a href="mailto:jefferson2459@gmail.com">jefferson2459@gmail.com</a>.
+    </p>
+  </main>
+
+  <footer>
+    Projeto Google Cloud: <code>levanteande</code> · Documento aplicável apenas à aplicação descrita.
+  </footer>
+</body>
+</html>

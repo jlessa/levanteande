@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Levante Ande — IA Short Lab</title>
+  <meta name="description" content="Ferramenta interna de automação de publicação de YouTube Shorts a partir de cortes editados.">
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.55; }
+    h1 { margin-bottom: .25rem; }
+    .lead { color: #666; margin-top: 0; }
+    h2 { margin-top: 2rem; }
+    code { background: rgba(127,127,127,.15); padding: .1rem .35rem; border-radius: 4px; }
+    ul { padding-left: 1.25rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.3); color: #888; font-size: .9rem; }
+    a { color: #0a66c2; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Levante Ande</h1>
+    <p class="lead">Aplicação proprietária do operador para automação de publicação de YouTube Shorts.</p>
+  </header>
+
+  <main>
+    <h2>O que é</h2>
+    <p>
+      O <strong>Levante Ande</strong> (também referido como <em>IA Short Lab</em>) é uma aplicação de uso interno mantida pelo
+      operador desta página. Sua única função é autenticar contra a conta do YouTube do próprio operador
+      e enviar vídeos curtos (Shorts) produzidos a partir de cortes editados localmente.
+    </p>
+
+    <h2>Quem pode usar</h2>
+    <p>
+      A aplicação é restrita ao operador identificado abaixo. Não há cadastro público, não há área de
+      clientes, não há coleta de dados de terceiros. Não é um produto comercial nem possui usuários
+      externos.
+    </p>
+
+    <h2>Permissões solicitadas ao Google</h2>
+    <ul>
+      <li><code>https://www.googleapis.com/auth/youtube.upload</code> — utilizada apenas para envio
+          de vídeos ao canal autorizado pelo próprio operador, via o método oficial
+          <code>videos.insert</code> da YouTube Data API v3.</li>
+    </ul>
+
+    <h2>Uso limitado das informações do Google</h2>
+    <p>
+      O uso das informações recebidas das APIs do Google adere à
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">
+        Google API Services User Data Policy</a>, incluindo os requisitos de <em>Limited Use</em>.
+    </p>
+
+    <h2>Documentos</h2>
+    <ul>
+      <li><a href="privacy.html">Política de Privacidade</a></li>
+      <li><a href="terms.html">Termos de Uso</a></li>
+    </ul>
+
+    <h2>Contato</h2>
+    <p>
+      Operador responsável: <a href="mailto:jefferson2459@gmail.com">jefferson2459@gmail.com</a>
+    </p>
+  </main>
+
+  <footer>
+    Projeto Google Cloud: <code>levanteande</code> · Última atualização: 21/05/2026.
+  </footer>
+</body>
+</html>
